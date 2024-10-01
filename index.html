@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comisiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h1>Calculadora Comisiones</h1>
+            <!-- Logo debajo del título -->
+            <img src="logo.png" alt="Logo Bamesa" class="logo-debajo-titulo">
+            
+            <div class="form-group">
+                <label for="tarifa">Tarifa:</label>
+                <select id="tarifa">
+                    <option value="2.0TD">2.0TD</option>
+                    <option value="3.0TD">3.0TD</option>
+                    <option value="6.1TD">6.1TD</option>
+                </select> 
+            </div>
+            <div class="form-group">
+                <label for="consumo">Consumo kWh:</label>
+                <input type="text" id="consumo" placeholder="0"> kWh/año
+            </div>
+            <div class="form-group">
+                <label for="fee">Fee €/MWh:</label>
+                <input type="text" id="fee" placeholder="0"> €/MWh
+            </div>
+            
+            <!-- Aquí es donde se muestra el resultado -->
+            <div class="result">
+                <h2>COMISIÓN</h2>
+                <h3 id="result">0,00 €</h3>
+                <p>*Comisión orientativa, queda sujeta a verificación de datos en el momento de la contratación.</p>
+            </div>
+        
+            <!-- Botón para calcular y logos al lado -->
+            <div class="buttons-and-logos">
+                <!-- Logo izquierdo -->
+                <img src="Logo Bamesa Consulting.png" alt="Bamesa Consulting" class="logo-izquierdo">
+                
+                <!-- Botón de calcular -->
+                <button onclick="calcularComision()">Calcular Comisión</button>
+        
+                <!-- Logo derecho -->
+                <img src="Logo Bamesa Consulting.png" alt="Bamesa Consulting" class="logo-derecho">
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
